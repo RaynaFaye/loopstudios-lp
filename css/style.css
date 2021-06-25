@@ -53,6 +53,46 @@ body {
   padding: 35px;
   margin: 125px 0 0 0;
 }
+/* Presentation section */
+.presentation {
+  margin: 150px;
+  display: grid;
+  grid-template-columns: 1fr 150px 100px 50px 1fr;
+  grid-template-rows: 150px 350px;
+}
+.presentation__image {
+  background: url(../images/desktop/image-interactive.jpg);
+  background-size: cover;
+  height: 100%;
+  grid-column: 1 / 5;
+  grid-row: 1 / -1;
+}
+.presentation__white {
+  background: #ffffff;
+  grid-column: 3 / -1;
+  grid-row: 2;
+}
+.presentation__text-block {
+  grid-column: 4 / -1;
+  grid-row: 2;
+  justify-self: end;
+  align-self: end;
+}
+.presentation__text-block__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 45px 0;
+}
+.presentation__text-block__text {
+  color: hsl(0, 0%, 41%);
+  font-family: 'Alata', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding-right: 25px;
+}
 /* Attribution Section */
 .attribution {
   font-size: 11px;

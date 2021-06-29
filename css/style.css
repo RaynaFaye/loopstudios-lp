@@ -93,6 +93,81 @@ body {
   margin: 0;
   padding-right: 25px;
 }
+/* Creations section */
+.creations {
+  margin: 150px;
+}
+.creations__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creations__title {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0;
+}
+.creations__see-all {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Alata', sans-serif;
+  text-decoration: none;
+  border: 1px solid #000000;
+  letter-spacing: 0.35em;
+  padding: 10px 35px;
+}
+.creations__projects {
+  list-style: none;
+  padding: 0;
+  margin: 75px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 25px;
+}
+.creations__projects__item {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px;
+  display: flex;
+}
+.creations__projects__item.deep-earth {
+  background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+.creations__projects__item.night-arcade {
+  background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+.creations__projects__item.soccer-team {
+  background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+.creations__projects__item.the-grid {
+  background-image: url(../images/desktop/image-grid.jpg);
+}
+.creations__projects__item.from-up-above {
+  background-image: url(../images/desktop/image-from-above.jpg);
+}
+.creations__projects__item.pocket-borealis {
+  background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+.creations__projects__item.the-curiosity {
+  background-image: url(../images/desktop/image-curiosity.jpg);
+}
+.creations__projects__item.make-it-fisheye {
+  background-image: url(../images/desktop/image-fisheye.jpg);
+}
+.creations__projects__link {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+}
 /* Attribution Section */
 .attribution {
   font-size: 11px;

@@ -119,6 +119,11 @@ body {
   letter-spacing: 0.35em;
   padding: 10px 35px;
 }
+.creations__see-all:hover,
+.creations__see-all:focus {
+  color: #ffffff;
+  background: #000000;
+}
 .creations__projects {
   list-style: none;
   padding: 0;
@@ -131,7 +136,6 @@ body {
   height: 450px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px;
   display: flex;
 }
 .creations__projects__item.deep-earth {
@@ -167,6 +171,13 @@ body {
   text-decoration: none;
   display: flex;
   align-items: flex-end;
+  padding: 35px;
+  width: 100%;
+}
+.creations__projects__link:hover,
+.creations__projects__link:focus {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  color: #000000;
 }
 /* Attribution Section */
 .attribution {

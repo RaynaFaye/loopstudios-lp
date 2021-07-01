@@ -97,13 +97,12 @@ body {
 /* Creations section */
 .creations {
   margin: 150px;
-}
-.creations__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .creations__title {
+  grid-column: 1;
+  grid-row: 1;
   text-transform: uppercase;
   color: #000000;
   font-family: 'Josefin Sans', sans-serif;
@@ -112,6 +111,10 @@ body {
   margin: 0;
 }
 .creations__see-all {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: center;
   text-transform: uppercase;
   color: #000000;
   font-family: 'Alata', sans-serif;
@@ -126,6 +129,8 @@ body {
   background: #000000;
 }
 .creations__projects {
+  grid-column: 1 / -1;
+  grid-row: 2;
   list-style: none;
   padding: 0;
   margin: 75px 0 0 0;
@@ -307,5 +312,80 @@ body {
     width: 100%;
     padding: 25px;
     margin-top: 150px;
+  }
+  /* Presentation section */
+  .presentation {
+    margin: 100px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation__image {
+    background: url(../images/mobile/image-interactive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 224px;
+  }
+  .presentation__text-block {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .presentation__text-block__title {
+    font-size: 36px;
+  }
+  .presentation__text-block__text {
+    line-height: 1.8;
+  }
+  /* Creations section */
+  .creations {
+    margin: 25px;
+    grid-template-columns: 1fr;
+  }
+  .creations__title {
+    text-align: center;
+    font-size: 36px;
+  }
+  .creations__see-all {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 35px;
+  }
+  .creations__projects {
+    margin-top: 50px;
+  }
+  .creations__projects__item {
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .creations__projects__item.deep-earth {
+    background-image: url(../images/mobile/image-deep-earth.jpg);
+  }
+  .creations__projects__item.night-arcade {
+    background-image: url(../images/mobile/image-night-arcade.jpg);
+  }
+  .creations__projects__item.soccer-team {
+    background-image: url(../images/mobile/image-soccer-team.jpg);
+  }
+  .creations__projects__item.the-grid {
+    background-image: url(../images/mobile/image-grid.jpg);
+  }
+  .creations__projects__item.from-up-above {
+    background-image: url(../images/mobile/image-from-above.jpg);
+  }
+  .creations__projects__item.pocket-borealis {
+    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+  }
+  .creations__projects__item.the-curiosity {
+    background-image: url(../images/mobile/image-curiosity.jpg);
+  }
+  .creations__projects__item.make-it-fisheye {
+    background-image: url(../images/mobile/image-fisheye.jpg);
+  }
+  .creations__projects__link {
+    font-size: 24px;
+    padding: 15px 175px 15px 15px;
   }
 }

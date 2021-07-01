@@ -388,4 +388,22 @@ body {
     font-size: 24px;
     padding: 15px 175px 15px 15px;
   }
+  /* Footer section */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px 25px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__menu__item {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .footer__socials__item:first-of-type {
+    margin-left: 0px;
+  }
 }

@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-size: 15px;
+  background: #ffffff;
 }
 /* Intro, Header */
 .intro {
@@ -246,4 +247,65 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media all and (max-width: 768px) {
+  /* Intro, Header */
+  .intro {
+    background: url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 25px 225px;
+  }
+  .header {
+    align-items: center;
+  }
+  .intro.open {
+    background: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .header__nav__menu-button {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .header__nav__menu {
+    display: none;
+  }
+  .header__nav__menu.open {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+  }
+  .header__nav__menu__item {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .header__nav__menu__link {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    padding-bottom: none;
+  }
+  .header__nav__menu__link:hover,
+  .header__nav__menu__link:focus {
+    border: none;
+  }
+  .intro__title {
+    font-size: 40px;
+    width: 100%;
+    padding: 25px;
+    margin-top: 150px;
+  }
 }

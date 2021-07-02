@@ -12,6 +12,7 @@ body {
   background: url(../images/desktop/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 50px 150px 150px;
 }
 .header {
@@ -253,12 +254,64 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@media all and (max-width: 1260px) {
+  .intro__title {
+    font-size: 55px;
+    width: 55%;
+  }
+  .intro {
+    padding: 50px 100px 150px;
+  }
+  .presentation {
+    margin: 100px;
+    grid-template-columns: 1fr 150px 50px 100px 1fr;
+  }
+  .presentation__text-block__title {
+    font-size: 40px;
+  }
+  .creations {
+    margin: 100px;
+  }
+  .creations__title {
+    font-size: 40px;
+  }
+  .footer {
+    padding: 50px 100px 25px;
+  }
+}
+@media all and (max-width: 980px) {
+  .intro__title {
+    font-size: 50px;
+    width: 60%;
+  }
+  .intro {
+    padding: 50px 50px 150px;
+  }
+  .presentation {
+    grid-template-columns: 1fr 50px 150px 100px 1fr;
+    grid-template-rows: 225px 275px;
+    margin: 50px;
+  }
+  .presentation__white {
+    grid-column: 2 / -1;
+  }
+  .presentation__text-block {
+    grid-column: 3 / -1;
+  }
+  .creations {
+    margin: 50px;
+  }
+  .footer {
+    padding: 50px 50px 25px;
+  }
+}
 @media all and (max-width: 768px) {
   /* Intro, Header */
   .intro {
     background: url(../images/mobile/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 40px 25px 225px;
   }
   .header {

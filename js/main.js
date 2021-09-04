@@ -10,12 +10,14 @@ function openMenu() {
   menu.classList.add('open');
   introBlock.classList.add('open');
   menuButtonImage.src = 'images/icon-close.svg';
+  menuButton.setAttribute('aria-expanded', 'true');
 }
 
 function hideMenu() {
   menu.classList.remove('open');
   introBlock.classList.remove('open');
   menuButtonImage.src = 'images/icon-hamburger.svg';
+  menuButton.setAttribute('aria-expanded', 'false');
 }
 
 menuButton.addEventListener('click', () => {
